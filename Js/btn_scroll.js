@@ -19,8 +19,7 @@ export const btnscroll = (id) => {
 
   document.addEventListener("click", e =>{        // tambien trabajaremos con el evento click del DOM
     if(e.target.matches(id)){
-      console.log(e.target); 
-
+      /*console.log(e.target);*/ 
       window.scrollTo({               //recibe una serie de opciones 
 
         behavior:"smooth",

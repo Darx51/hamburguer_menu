@@ -12,6 +12,14 @@ import stremVideo from "./webcam_detection.js";
 import geolocation from "./geolocation_position.js";
 import buscarCartas from "./buscar_cards.js";
 import loteria from "./lottery.js";
+import carrusel from "./slider.js";
+import scrollSpy from "./scroll_spy.js";
+import smartVideo from "./video_inteligente.js";
+import contactFormValidations from "./form_validations.js";
+import dragAnddrop from "./drag_drop.js";
+import qrGenerator from "./qr_code_generator.js";
+import speachReader from "./speachReader.js";
+
 
 const d=document;
 d.addEventListener("DOMContentLoaded", e=>{           //Primero se carga el documento
@@ -50,7 +58,27 @@ d.addEventListener("DOMContentLoaded", e=>{           //Primero se carga el docu
   buscarCartas(".buscarCartas",".card");
 
   //Exercise 12
-  loteria("#lenguajes","#btnGanador",".lengProg");
+  loteria("#btnGanador",".lengProg");
+
+  //Slider
+  carrusel();
+
+  //scroll Spy
+  scrollSpy();
+
+  //smart Video
+  smartVideo();
+
+  // Form Validations
+  contactFormValidations();
+
+  //Drag and Drop
+  dragAnddrop(".lista");
+
+  //QR Generator
+  qrGenerator("contenedorQR","link","formulario");
+
+  
 });
 
 
@@ -68,6 +96,10 @@ d.addEventListener("keydown", e =>{             //KeyDown es otro evento que deb
   shortcuts(e);
   moveBall(e, "#ball", "#stage");
 })
+
+
+//Speach Reader
+speachReader();
 
 //Exercise 5 
 dark_theme("#btnDark","dark-mode","#stage","stageColor");          //como la clase 'dark-mode y 'stageColor' las pondremos y quitaremos

@@ -5,10 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
-  <link rel="stylesheet" href="css/excercises-dom.css">
   <link rel="stylesheet" href="css/ball_keyboard.css">
   <link rel="stylesheet" href="css/buscarCards.css">
+  <link rel="stylesheet" href="css/excercises-dom.css">
+  <link rel="stylesheet" href="css/drag_drop.css">
+  <link rel="stylesheet" href="css/Qr_generator.css">
+
 
 </head>
 <body data-dark>              <!--agrego el atributo datadark-->
@@ -28,27 +32,33 @@
   
 
 
-  <!--Menu Aside--> 
+  <!--Menu Aside-->                                   <!--data-scroll-spy es un data-atributo personalizado-->        
   <aside class="panel" id="panel">
     <nav class="menu">
-      <a id="a" href="#seccion1">CLock</a>
-      <a id="a" href="#seccion2">keyboard movements</a>
-      <a id="a" href="#seccion3">Contdown Timer</a>
-      <a id="a" href="#seccion4">Responsive Design</a>
-      <a id="a" href="#seccion5">Responsive window testing</a>
-      <a id="a" href="#seccion6">Devices Detection</a>
-      <a id="a" href="#seccion7">Status network detection</a>
-      <a id="a" href="#seccion8">Video Detection</a>
-      <a id="a" href="#seccion9">Geolocation Position</a>
-      <a id="a" href="#seccion10">Image Search</a>
-      <a id="a" href="#seccion11">Lottery</a>
+      <a id="a" href="#seccion1" data-scroll-spy>CLock</a>
+      <a id="a" href="#seccion2" data-scroll-spy>keyboard movements</a>
+      <a id="a" href="#seccion3" data-scroll-spy>Contdown Timer</a>
+      <a id="a" href="#seccion4" data-scroll-spy>Responsive Design</a>
+      <a id="a" href="#seccion5" data-scroll-spy>Responsive window testing</a>
+      <a id="a" href="#seccion6" data-scroll-spy>Devices Detection</a>
+      <a id="a" href="#seccion7" data-scroll-spy>Status network detection</a>
+      <a id="a" href="#seccion8" data-scroll-spy>Video Detection</a>
+      <a id="a" href="#seccion9" data-scroll-spy>Geolocation Position</a>
+      <a id="a" href="#seccion10" data-scroll-spy>Image Search</a>
+      <a id="a" href="#seccion11" data-scroll-spy>Lottery</a>
+      <a id="a" href="#seccion12" data-scroll-spy>Responsive Slider</a>
+      <a id="a" href="#seccion13" data-scroll-spy>Smart Video</a>
+      <a id="a" href="#seccion14" data-scroll-spy>Form Validating</a>
+      <a id="a" href="#seccion15" data-scroll-spy>Drang and Drop</a>
+      <a id="a" href="#seccion16" data-scroll-spy>QR Code Generator</a>
+      <a id="a" href="#seccion17" data-scroll-spy>Voices of System O.S.</a>
       
     </nav>
   </aside>
 
   <!--Main-->
   <main>
-    <section id="seccion1" class="section">
+    <section id="seccion1" class="section" data-scroll-spy>
         <h2>CLock & Alarm</h2>
           <div class="mostrarReloj" id="mostrarReloj"></div>
         <div>
@@ -59,27 +69,27 @@
         </div>
     </section>
 
-    <section id="seccion2" class="section">
+    <section id="seccion2" class="section" data-scroll-spy>
       <h2>Keyboard movements</h2>
         <div class="stage" id="stage">
           <div class="ball" id="ball"></div>
         </div>
     </section>
 
-    <section id="seccion3" class="section">
+    <section id="seccion3" class="section" data-scroll-spy>
       <h2>Count Down</h2>
       <!-- <input type="datetime-local" name="datetime-local" id="datetime-local"> -->
       <div id="muestraCuentaReg"></div>
       <div></div>
     </section>
 
-    <section id="seccion4" class="section">
+    <section id="seccion4" class="section" data-scroll-spy>
       <h2>Responsive Design with Javascript</h2>
       <div id="youtube"></div>
       <div id="gmaps"></div>
     </section>
 
-    <section id="seccion5" class="section">
+    <section id="seccion5" class="section" data-scroll-spy>
       <h2>Responsive Window Testing</h2>
       <form id="responsive-tester"> 
         <input name="direccion"  type="url" placeholder="URL" required>
@@ -93,21 +103,21 @@
     </form>
     </section>
 
-    <section id="seccion6" class="section">
+    <section id="seccion6" class="section" data-scroll-spy>
       <h2>Devices Detection</h2>
       <div id="user-device"></div>
     </section>
 
-    <section id="seccion7" class="section">
+    <section id="seccion7" class="section" data-scroll-spy>
       <h2>Status Network Detection</h2>
     </section>
 
-    <section id="seccion8" class="section">
+    <section id="seccion8" class="section" data-scroll-spy>
       <h2>Video Detection</h2>
       <video id="video" video></video> 
     </section>
 
-    <section id="seccion9" class="section">
+    <section id="seccion9" class="section" data-scroll-spy>
       <h2 id="cords">Geolocation Position</h2>
      <!-- 
        <p id = "status"></p>
@@ -116,7 +126,7 @@
       --> 
     </section>
 
-    <section id="seccion10" class="section10">
+    <section id="seccion10" class="section" data-scroll-spy>
       <h2 class="tituloCartas">Lookup some Card</h2>
       <input type="search" class="buscarCartas" id="buscarCartas" placeholder="Text here">
 
@@ -164,11 +174,10 @@
       </div>
 
     </section>
-    <section id="seccion11" class="section">
+    <section id="seccion11" class="section" data-scroll-spy>
       <h2>Lottery</h2>
       <br>
       <div id="lenguajes">
-
         <p id="1" class="lengProg">Javascript</p>
         <p id="2" class="lengProg">Java</p>
         <p id="3" class="lengProg">Python</p>
@@ -179,27 +188,224 @@
         <p id="8" class="lengProg">Ruby</p>
         <p id="9" class="lengProg">Go</p>
         <p id="10" class="lengProg">Perl</p>
-
       </div>
         <br>
       <button id="btnGanador">Obtener Ganador</button>
-
-    </section>
-    <section id="seccion12" class="section">
-      <h2>seccion 12</h2>
     </section>
 
-    <section id="seccion13" class="section">
-      <h2>Seccion13</h2>
+    <section id="seccion12" class="section" data-scroll-spy>
+      <h2>Responsive Slider</h2>
+      <div class="slider">  <!--relative-->
+        <div class="slider-slides">
+          <div class="slider-slide active">
+            <h4>Slide1</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aspernatur, assumenda mollitia et beatae dicta incidunt natus corrupti at doloremque, eveniet illum deserunt aliquid vero?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut similique, eaque hic, commodi quisquam a veniam alias tempore magni facilis sunt eligendi, ad non aliquid voluptatibus numquam omnis expedita pariatur nihil. Error perspiciatis temporibus vel.</p>
+          </div>
+          <div class="slider-slide">
+            <h4>Slide2</h4>
+            <img src="https://placeimg.com/400/400/animals" alt="animals">
+          </div>
+          <div class="slider-slide">
+            <h4>Slide3</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aspernatur, assumenda mollitia et beatae dicta incidunt natus corrupti at doloremque, eveniet illum deserunt aliquid vero?</p>
+          </div>
+          <div class="slider-slide">
+            <h4>Slide4</h4>
+            <img src="https://placeimg.com/400/400/arch" alt="architecture">
+          </div>
+        </div>
+        <div class="slider-btns">
+          <a class="prev" href="">&laquo;</a>
+          <a class="next" href="">&raquo;</a>
+        </div>
+    </div>
     </section>
-    <section id="seccion14" class="section">
-      <h2>Seccion14</h2>
+
+    <section id="seccion13" class="section" data-scroll-spy>
+      <h2>Smart Video</h2>                                          
+      <br>                                                                <!--agrego un data atribute para activar el intersection observer-->
+      <video src="assets/night.mp4" muted controls loop data-smart-video></video>  
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <video src="assets/night.mp4" muted controls loop data-smart-video></video>
+      <br>
     </section>
-    <section id="seccion15" class="section">
-      <h2>Seccion15</h2>
+
+    <section id="seccion14" class="section" data-scroll-spy>
+      <h2>form Validation</h2>
+      <form class="contact-form" action="https://formsubmit.co/dayalaramz@outlook.com" method="POST" target="_blank">
+        <legend>Send to us your comments</legend>
+        <input type="text" name="name" placeholder="Write your name" title="This field only allow letters and spaces" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]{1,50}$" required>    <!--no acepta mas de 150 caracters-->
+        <input type="email" name="email" placeholder="Write your email" title="Email wrong" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+        <input type="text" name="subject" placeholder="Subject" title="The subject is required" required>
+        <textarea name="comments" cols="50" rows="5" placeholder="Write your comments" title="Your comments shouldn't over 255 characters" data-pattern="^(\n|.){1,255}$" required></textarea>
+        <input type="submit" value="Send">
+        <div class="contact-form-loader none">
+          <img src="assets/ball-triangle.svg" alt="loading">
+        </div>
+        <div class="contact-form-response none">
+          <p>The data has been sent</p>     <!--Este mensaje nos lo debe enviar el servidor, por ahora sera de esta forma ya que sera simulado-->
+        </div>
+      </form>
+    </section>
+
+                      <!--S E C C I O N  15-->
+    <section id="seccion15" class="section" data-scroll-spy>
+      <div class="contenedor">
+        <div class="contenedor-lista">
+          <h1>Drag & Drop with Javascript</h1>
+          <div class="lista">
+            <!-- Persona #1 -->
+            <div class="persona" data-id="1">
+              <div class="foto">
+                <img src="img/drag_drop/1.png" alt="">
+              </div>
+              <div class="nombre">
+                <div>
+                  <p class="label">Name</p>
+                  <p class="dato">Julio Preciado</p>
+                </div>
+              </div>
+              <div class="edad">
+                <p class="label">Age</p>
+                <p class="dato">24</p>
+              </div>
+              <div class="correo">
+                <div class="label">Email</div>
+                <p class="dato">dar@gmail.com</p>
+              </div>
+            </div>
+            
+            <!-- Persona #2 -->
+            <div class="persona" data-id="2">
+              <div class="foto">
+                <img src="img/drag_drop/2.png" alt="">
+              </div>
+              <div class="nombre">
+                <div>
+                  <p class="label">Name</p>
+                  <p class="dato">Alejandro</p>
+                </div>
+              </div>
+              <div class="edad">
+                <p class="label">Age</p>
+                <p class="dato">25</p>
+              </div>
+              <div class="correo">
+                <div class="label">Email</div>
+                <p class="dato">alejandro@gmail.com</p>
+              </div>
+            </div>
+    
+            <!-- Persona #3 -->
+            <div class="persona" data-id="3">
+              <div class="foto">
+                <img src="img/drag_drop/3.png" alt="">
+              </div>
+              <div class="nombre">
+                <div>
+                  <p class="label">Name</p>
+                  <p class="dato">Stephanie</p>
+                </div>
+              </div>
+              <div class="edad">
+                <p class="label">Age</p>
+                <p class="dato">20</p>
+              </div>
+              <div class="correo">
+                <div class="label">Email</div>
+                <p class="dato">stephanie@gmail.com</p>
+              </div>
+            </div>
+    
+            <!-- Persona #4 -->
+            <div class="persona" data-id="4">
+              <div class="foto">
+                <img src="img/drag_drop/4.png" alt="">
+              </div>
+              <div class="nombre">
+                <div>
+                  <p class="label">Name</p>
+                  <p class="dato">Mike</p>
+                </div>
+              </div>
+              <div class="edad">
+                <p class="label">Age</p>
+                <p class="dato">18</p>
+              </div>
+              <div class="correo">
+                <div class="label">Email</div>
+                <p class="dato">mike@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
 
+    <!--Intersecction Observer with Scroll Image-->
+    <section  id="seccion16" class="section" data-scroll-spy>
+      <h2>QR Code Generator</h2>
+      <div class="containerQR">
+        <form action="" id="formulario" class="formulario">
+          <input type="text" id="link" placeholder="Write URL" />
+          <button class="btn">Generar QR</button>
+        </form>
+  
+        <div id="contenedorQR" class="contenedorQR">
+          <!--Aqui se genera el codigo QR-->
+        </div>
+        
+      </div>
+    </section>
+
+
+    <section  id="seccion17" class="section" data-scroll-spy>
+      <h2>Voices of System O.S.</h2>
+      <div class="container">
+        <select id="id-select">
+          <option value="">--Choose an option--</option>
+        </select>
+        <br><br>
+        <textarea name="" id="id-text-area" cols="50" rows="5"></textarea>
+        <br><br>
+        <button id="btn-speach">Read Text</button>
+      </div>
+    </section>
 
 
 
@@ -208,6 +414,8 @@
   <button class="btnScroll hidden-active" id="btnScroll">&#11014;</button>
   <button class="btnDark" id="btnDark">🌙</button>
 
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="Js/index_dom.js" type="module"></script>
 </body>
 </html>
